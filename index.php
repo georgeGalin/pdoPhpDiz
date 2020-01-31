@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <body>
-        Puoi inserire nuove parole al dizionario compilando il form<br>
-        altrimenti inserisci solo la parola da ricercare e premi consulta<br>
+        <h2>Inserimento nuove parole e<br><h2>
+        <h2>Consulta dizionario<br><h2>
         
         <br><br>
         <form method="POST" action="index.php">
@@ -29,7 +29,7 @@
   
             $connessione->query("INSERT INTO $pdb (parola,sinonimo,contrario) values ('$parola','$sinonimo','$contrario')");
   
-            echo 'la nuova parola è stata inserita correttamente';
+            echo 'la nuova parola è stata inserita';
             include("chiudiConnessione.php");
             
         }
